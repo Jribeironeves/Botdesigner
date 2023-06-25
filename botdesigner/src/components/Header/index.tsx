@@ -1,4 +1,3 @@
-/* eslint-disable react/no-children-prop */
 import React, { useState } from "react";
 import {
   HeaderContainer,
@@ -28,12 +27,12 @@ export const Header: React.FC = () => {
       <MenuList isOpen={menuOpen}>
         <MenuItem>
           <MenuLink href="#">
-            <Button children="Home" />
+            <Button>Home</Button>
           </MenuLink>
         </MenuItem>
         <MenuItem>
           <MenuLink href="#">
-            <Button children="Árvore" />
+            <Button>Árvore</Button>
           </MenuLink>
         </MenuItem>
       </MenuList>
