@@ -6,7 +6,7 @@ import {
   MenuButton,
   MenuLink,
   MenuList,
-  MenuItem
+  MenuItem,
 } from "./styles";
 import { Button } from "../Button";
 
@@ -27,13 +27,13 @@ export const Header: React.FC = () => {
       </MenuButton>
       <MenuList isOpen={menuOpen}>
         <MenuItem>
-          <MenuLink href='#'>
-            <Button children='Home' />
+          <MenuLink href="#">
+            <Button children="Home" />
           </MenuLink>
         </MenuItem>
         <MenuItem>
-          <MenuLink href='#'>
-            <Button children='Árvore' />
+          <MenuLink href="#">
+            <Button children="Árvore" />
           </MenuLink>
         </MenuItem>
       </MenuList>
