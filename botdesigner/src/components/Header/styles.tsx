@@ -1,32 +1,41 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 import styled from "styled-components";
 
+const logo = require("../../assets/logo.png");
+
 export const HeaderContainer = styled.header`
-  background-color: red;
+  background-color: #FFFFFF;
   padding: 20px;
   width: 97.4vw;
 
   @media (min-width: 1501px) and (max-width: 1600px) {
     padding: 20px;
     width: 97.37vw;
-    background-color: red;
+    background-color: #FFFFFF;
   }
 
   @media (min-width: 2501px) and (max-width: 2600px) {
     padding: 20px;
     width: 98.43vw;
-    background-color: green;
+    background-color: #FFFFFF;
   }
 `;
 
-export const Title = styled.h1`
+export const Logo = styled.div`
   color: #253d5c;
   font-size: 32px;
+  width: 250px;
+  height: 80px;
   font-weight: 600;
   margin: 20px 0 0;
   margin-left: 80px;
+  background-image: url(${logo});
+  background-repeat: no-repeat;
 
   @media (max-width: 768px) {
     font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 4rem;
   }
 `;
 
@@ -36,8 +45,8 @@ export const MenuButton = styled.button`
   @media (max-width: 768px) {
     display: block;
     position: absolute;
-    top: 30px;
-    right: 10px;
+    top: 62px;
+    right: 20px;
     z-index: 10;
     background-color: transparent;
     border: none;
@@ -60,8 +69,8 @@ export const MenuList = styled.ul<{ isOpen: boolean }>`
   margin: 0;
   padding: 0;
   justify-content: flex-end;
-  margin-top: -2rem;
   margin-right: 60px;
+  margin-top: -3rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -70,8 +79,8 @@ export const MenuList = styled.ul<{ isOpen: boolean }>`
     position: absolute;
     width: auto;
     top: 166px;
-    left: 8px;
-    background-color: #f2f2f2;
+    left: 10px;
+    background-color: red;
     padding: 10px;
     border-radius: 4px;
   }

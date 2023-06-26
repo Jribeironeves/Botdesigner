@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {
   HeaderContainer,
-  Title,
+  Logo,
   MenuButton,
   MenuLink,
   MenuList,
@@ -18,7 +18,7 @@ export const Header: React.FC = () => {
 
   return (
     <HeaderContainer>
-      <Title>Botdesigner</Title>
+      <Logo/>
       <MenuButton onClick={toggleMenu}>
         <span></span>
         <span></span>

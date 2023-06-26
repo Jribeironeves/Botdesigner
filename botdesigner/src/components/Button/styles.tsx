@@ -14,16 +14,24 @@ export const ButtonContainer = styled.div`
 `;
 
 export const ButtonStyled = styled.button`
+  width: 140px;
   margin-right: 20px;
   padding: 8px 12px;
-  background-color: #ccc;
+  background-color: #3680AE;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 700;
   border: none;
-  border-radius: 4px;
-  color: #333;
+  color: #FFFFFF;
   font-size: 14px;
   cursor: pointer;
 
   @media (max-width: 768px) {
-    width: 100vw;
+    width: 80vw;
   }
+
+  &:hover {
+    background-color: #4198ce;
+  }
+
 `;
