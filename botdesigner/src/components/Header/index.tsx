@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   HeaderContainer,
   Logo,
@@ -7,7 +8,7 @@ import {
   MenuList,
   MenuItem,
 } from "./styles";
-import { Button } from "../Button";
+import { ButtonStyled } from "../Button";
 
 export const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,9 @@ export const Header: React.FC = () => {
 
   return (
     <HeaderContainer>
-      <Logo/>
+      <Link to="/">
+        <Logo />
+      </Link>
       <MenuButton onClick={toggleMenu}>
         <span></span>
         <span></span>
@@ -26,13 +29,17 @@ export const Header: React.FC = () => {
       </MenuButton>
       <MenuList isOpen={menuOpen}>
         <MenuItem>
-          <MenuLink href="#">
-            <Button>Home</Button>
+          <MenuLink>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <ButtonStyled>Home</ButtonStyled>
+            </Link>
           </MenuLink>
         </MenuItem>
         <MenuItem>
-          <MenuLink href="#">
-            <Button>Árvore</Button>
+          <MenuLink>
+            <Link to="/tree" style={{ textDecoration: "none" }}>
+              <ButtonStyled>Árvore</ButtonStyled>
+            </Link>
           </MenuLink>
         </MenuItem>
       </MenuList>

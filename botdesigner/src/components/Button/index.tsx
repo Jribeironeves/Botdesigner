@@ -1,15 +1,15 @@
 import React from "react";
-import { ButtonContainer, ButtonStyled } from "./styles";
+import { ButtonContainer, ButtonStyleds } from "./styles";
 
 interface ButtonProps {
   onClick?: () => void;
   children?: string;
 }
 
-export const Button: React.FC<ButtonProps> = ({ onClick, children }) => {
+export const ButtonStyled: React.FC<ButtonProps> = ({ onClick, children }) => {
   return (
     <ButtonContainer>
-      <ButtonStyled onClick={onClick}>{children}</ButtonStyled>
+      <ButtonStyleds onClick={onClick}>{children}</ButtonStyleds>
     </ButtonContainer>
   );
 };

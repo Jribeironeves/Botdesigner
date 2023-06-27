@@ -5,6 +5,7 @@ export const ButtonContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
+  text-decoration: none !important;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -13,11 +14,12 @@ export const ButtonContainer = styled.div`
   }
 `;
 
-export const ButtonStyled = styled.button`
+export const ButtonStyleds = styled.button`
   width: 140px;
   margin-right: 20px;
   padding: 8px 12px;
   background-color: #3680AE;
+  text-decoration: none !important;
   border-radius: 30px;
   font-size: 15px;
   font-weight: 700;
